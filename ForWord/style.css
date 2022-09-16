@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #1e1f22;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 20px;
+    color: #828691;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.submit:hover {
+    background-color: #3d3d3d;
+    color: yellow;
+}
+
+/* Hero Content Style */
+.pink-text {
+    color: #FD0272;
+}
+
+.site-wrapper {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.content-container h1 {
+    padding: 1rem 0 1rem 0;
+}
+
+
+/* Offer Style*/
+.offer-container {
+    position: absolute;
+    margin: -20px 0 -20px -10px;
+}
+
+.offer-container p {
+    background-color: #ffdd4d;
+    padding: 10px 23px 10px 23px;
+    color: #1e1f22;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+/* Contact Form Style */
+
+.form-padding {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.form-container {
+    padding-top: 3.5rem;
+}
+
+#contact {
+    border: solid 2px #ecedf2;
+    border-radius: 24px;
+    padding: 35px 30px 45px 30px;
+}
+
+#contact h2 {
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+
+#contact input[type="text"],
+#contact textarea {
+    width: 90%;
+    border: 1px solid #ecedf2;
+    border-radius: 12px;
+    background: #FFF;
+    margin: 7px 0 5px;
+    padding: 17px;
+}
+
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 97%;
+    border: none;
+    background: #FD0272;
+    border-radius: 12px;
+    color: #FFF;
+    padding: 17px;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#contact button[type="submit"]:hover {
+    cursor: pointer;
+    width: 97%;
+    border: none;
+    background: #C02a61;
+    border-radius: 12px;
+    color: #FFF;
+    padding: 17px;
+    font-size: 15px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 15px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+    color: #8e8e90;
+}
+
+:-moz-placeholder {
+    color: #8e8e90;
+}
+
+::-moz-placeholder {
+    color: #8e8e90;
+}
+
+:-ms-input-placeholder {
+    color: #8e8e90;
+}
+
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #ecedf2;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+input[type='radio']:checked {
+    background: #FD0272;
+    outline: 2px solid #FD0272;
+}
+
+
+/* Modal Style */
+
+.modal-container {
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto !important;
+    z-index: 40;
+}
+
+.modal-contents {
+    height: 305px;
+    width: 380px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 12px;
+    margin: 0 auto;
+    top: 220px;
+}
+
+.modal-contents h3 {
+    font-size: 24px;
+    padding: 8px 0 8px 0;
+}
+
+.modal-contents p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-padding {
+    padding: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.leftright {
+    height: 3px;
+    width: 15px;
+    position: absolute;
+    background-color: #707074;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.rightleft {
+    height: 3px;
+    width: 15px;
+    position: absolute;
+    background-color: #707074;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+@media (min-width: 800px) {
+
+
+    .site-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+
+    .content-container {
+        padding-top: 4.5rem;
+    }
+}
+
+@media (min-width: 905px) {
+
+    .form-container {
+        width: 408px;
+    }
+}
